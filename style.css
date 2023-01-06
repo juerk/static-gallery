@@ -62,7 +62,7 @@ a {
 
 /* pueblos */
 #pueblos-header {
-  z-index: 3;
+  z-index: 5;
   margin-top: 85px;
   position: sticky;
   top: 31px;
@@ -70,6 +70,11 @@ a {
 #pueblos-header img {
   width: 100%;
 }
+#pueblos-header a {
+  height: 20px;
+  width: 30px;
+}
+
 #pueblos-main {
   height: 600px;
   width: 100%;
@@ -129,7 +134,7 @@ a {
   margin-bottom: -200px;
 }
 #nature-header {
-  z-index: 1;
+  z-index: 5;
   position: sticky;
   top: -27px;
 }

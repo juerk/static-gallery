@@ -19,6 +19,7 @@
 body {
   font-family: 'Playfair Display', serif;
   display: flex;
+  background-color: black;
 }
 a {
   text-decoration: none;

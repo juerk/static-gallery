@@ -19,9 +19,6 @@
 body {
   font-family: 'Playfair Display', serif;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: grey;
 }
 a {
   text-decoration: none;
@@ -31,20 +28,27 @@ a {
 /* HEADER  */
 header {
   z-index: 10;
+  height: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
   position: fixed;
-} 
-#gallery-header {
-  position: fixed;
-  right: 80px;
-  top: -5px;
-  text-align: center;
-  /* background: white; */
 }
-#gallery-header span {
-  text-transform: uppercase;
-  font-size: 3.5rem;
-  color: black;
+header ul {
+  z-index: 11;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
+header ul li {
+  font-size: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
 #puzzle-down-gallery-header {
   position: fixed;
   top: 0px;
@@ -53,58 +57,7 @@ header {
 #puzzle-down-gallery-header img{
   margin-top: -1px;
   width:100%;
-}
-
-
-
-#sidebar {
-  height: 200px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  position: sticky;
-  top: -80px;
-  background-color: transparent;
-  /* border: 1px solid red; */
-}
-#wrapper {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-}
-#home {
-  position: sticky;
-  top: 0px;
-}
-#about {
-  position: sticky;
-  top: 20px;
-}
-#buy {
-  position: sticky;
-  top: 48px;
-}
-#contact {
-}
-
-#home img {
-  height: 100%;
-  width: 75px;
-}
-#about img {
-  height: 100%;
-  width: 75px;
-}
-#buy img {
-  height: 100%;
-  width: 75px;
-}
-#contact img {
-  height: 100%;
-  width: 75px;
 }
 
 
@@ -127,7 +80,7 @@ a {
 }
 /* pueblos */
 #pueblos-all {
-  /* margin-top: -250px; */
+  margin-top: -50px;
 }
 
 #pueblos-header {
@@ -138,7 +91,7 @@ a {
   width: 100%;
 }
 #pueblos-main {
-  height: 600px;
+  height: 560px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -162,10 +115,13 @@ a {
   letter-spacing: 2px;
 }
 #pueblos-header-text {
-  position: fixed;
-  right: 150px;
-  top: 100px;
-  font-size: 1.5rem;
+  width: 100%;
+  position: sticky;
+  top: 40px;
+}
+#pueblos-header-text span {
+  font-size: 2rem;
+  border-bottom: 3px solid turquoise;
 }
 
 #pueblos-dropped {
